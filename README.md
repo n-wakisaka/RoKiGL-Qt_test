@@ -1,1 +1,2 @@
-# RoKiGL-Qt_test
+# RoKiGL-Qtテスト
+RoKiGLをQtで動かすテスト
