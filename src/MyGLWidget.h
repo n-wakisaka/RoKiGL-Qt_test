@@ -1,3 +1,7 @@
+/**
+   @author Naoki Wakisaka
+	 Copyright (C) 2017 Naoki Wakisaka
+*/
 #ifndef __MY_GLWIDGET_H__
 #define __MY_GLWIDGET_H__
 

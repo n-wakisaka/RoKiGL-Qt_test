@@ -1,3 +1,7 @@
+/**
+   @author Naoki Wakisaka
+	 Copyright (C) 2017 Naoki Wakisaka
+*/
 #include <cstring>
 #include "MyGLWidget.h"
 #include "MyMainWindow.h"
