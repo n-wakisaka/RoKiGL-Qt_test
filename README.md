@@ -15,5 +15,5 @@ $make
 * RoKi-GL Ver.1.0.0-beta5 (http://www.mi.ams.eng.osaka-u.ac.jp/software/roki.html)
 * Qt Ver 5.6 (https://www.qt.io/download-open-source/)
 
-# 著作権標記
+# 著作権表記
 Copyright (C) 2017 Naoki Wakisaka
