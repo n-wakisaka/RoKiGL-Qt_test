@@ -1,0 +1,14 @@
+#!/bin/sh
+
+OUTPUT=./src/rokigl.pri
+echo generate rokigl configure...
+
+echo "#This file is rokigl configure" > $OUTPUT
+echo -n "INCLUDEPATH += " >> $OUTPUT
+rokigl-config -I | sed -e "s/-I//" >> $OUTPUT
+echo -n "LIBS += " >> $OUTPUT
+rokigl-config -L >> $OUTPUT
+echo -n "LIBS += " >> $OUTPUT
+rokigl-config -l >> $OUTPUT
+
+echo done
