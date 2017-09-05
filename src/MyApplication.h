@@ -1,6 +1,6 @@
 /**
    @author Naoki Wakisaka
-	 Copyright (C) 2017 Naoki Wakisaka
+   Copyright (C) 2017 Naoki Wakisaka
 */
 #ifndef __MY_APPLICATION_H__
 #define __MY_APPLICATION_H__
@@ -12,15 +12,15 @@
 
 class MyApplication : public QObject
 {
-	Q_OBJECT
+  Q_OBJECT
 public:
-	MyApplication(int& argc, char**& argv);
-	~MyApplication();
-	
-	int exec();
+  MyApplication(int& argc, char**& argv);
+  ~MyApplication();
+
+  int exec();
 private:
-	QApplication *app;
-	MyMainWindow *window;
+  QApplication *app;
+  MyMainWindow *window;
 };
 
 #endif // __MY_APPLICATION_H__

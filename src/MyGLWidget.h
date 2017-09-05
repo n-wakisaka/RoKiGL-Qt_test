@@ -1,6 +1,6 @@
 /**
    @author Naoki Wakisaka
-	 Copyright (C) 2017 Naoki Wakisaka
+   Copyright (C) 2017 Naoki Wakisaka
 */
 #ifndef __MY_GLWIDGET_H__
 #define __MY_GLWIDGET_H__
@@ -21,33 +21,33 @@ using namespace std;
 
 class MyGLWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
-	Q_OBJECT
+  Q_OBJECT
 public:
-	MyGLWidget(QWidget *parent = Q_NULLPTR);
-	~MyGLWidget();
+  MyGLWidget(QWidget *parent = Q_NULLPTR);
+  ~MyGLWidget();
 
-	bool loadChain(QString modelfile);
+  bool loadChain(QString modelfile);
 
 protected:
-	void initializeGL() Q_DECL_OVERRIDE;
-	void resizeGL(int w, int h) Q_DECL_OVERRIDE;
-	void paintGL() Q_DECL_OVERRIDE;
+  void initializeGL() Q_DECL_OVERRIDE;
+  void resizeGL(int w, int h) Q_DECL_OVERRIDE;
+  void paintGL() Q_DECL_OVERRIDE;
 
   void mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
   void mouseMoveEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
   void wheelEvent(QWheelEvent *event) Q_DECL_OVERRIDE;
 
 private:
-	void _setFrustum();
+  void _setFrustum();
 
-	rkChain chain;
+  rkChain chain;
   rkglChain gc;
 
-	rkglCamera cam;
+  rkglCamera cam;
   rkglLight light;
-	rkglChainAttr attr;
+  rkglChainAttr attr;
 
-	QPoint mouse_pos;
+  QPoint mouse_pos;
 };
 
 #endif // __MY_GLWIDGET_H__
